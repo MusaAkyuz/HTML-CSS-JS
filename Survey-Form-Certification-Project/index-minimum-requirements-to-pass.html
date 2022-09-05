@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <fieldset class="questions">
+      <form id="survey-form">
+
+        <!-- Sorular: text-email-number -->
+        <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label id="email-label">Email <input id="email" type="email" placeholder="Enter your Email" required/></label>
+        <label id="number-label">Age <input id="number" type="number" placeholder="Age" min="10" max="99" /></label>
+
+        <!-- Soru: Açılır menülü -->
+        <label>Which option best describes your current role?
+          <select id="dropdown" name="referrer">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+
+        <!-- Soru: radio butonlu -->
+        <label>Would you recommend freeCodeCamp to a friend?</label>
+        <label><input type="radio" value="1" name="answer"/> Definitely</label>
+        <label><input type="radio" value="2" name="answer"/> Maybe</label>
+        <label><input type="radio" value="3" name="answer"/> Not sure</label>
+
+        <!-- Soru: Açılır menülü -->
+        <label>What is your favorite feature of freeCodeCamp?
+          <select id="dropdown" name="referrer">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+          </select>
+        </label>
+
+        <!-- Soru: checkbox ile -->
+        <label><input type="checkbox" value="front">Front-end Projects</label>
+        <label><input type="checkbox" value="back">Back-end Projects</label>
+        <label><input type="checkbox" value="data">Data Visualization</label>
+        <label><input type="checkbox" value="challenge">Challenges</label>
+        <label><input type="checkbox" value="opensource">Open Source Community</label>
+        <label><input type="checkbox" value="gitter">Gitter help rooms</label>
+        <label><input type="checkbox" value="video">Videos</label>
+        <label><input type="checkbox" value="meetup">City Meetups</label>
+        <label><input type="checkbox" value="wiki">Wiki</label>
+        <label><input type="checkbox" value="forum">Forum</label>
+        <label><input type="checkbox" value="courses">Additional Courses</label>
+
+        <!-- Soru: textarea -->
+        <label>Any comments or suggestions?
+          <textarea></textarea>
+        </label>
+
+        <input id="submit" type="submit">
+      </form>
+    </fieldset>
+  </body>
+</html>
