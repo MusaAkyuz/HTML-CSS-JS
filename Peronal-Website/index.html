@@ -1,0 +1,127 @@
+<html>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Faster+One&family=Major+Mono+Display&family=Monoton&family=Montserrat+Subrayada&family=Orbitron&family=Press+Start+2P&family=Turret+Road:wght@200&family=Wallpoet&display=swap" rel="stylesheet">
+
+<style>
+
+.splitmain {
+	background-image: url("computer.gif"), url("colorpixel.jpg");
+	background-repeat: repeat-y;
+	background-position: fixed;
+	background-size: 150px;
+	background-color: black;
+	left: 0px;
+	top:0px;
+	z-index: 2;
+}
+
+.headerfont {
+	font-family: 'Orbitron';
+	font-size: 1.5em;
+	font-weight: 500;
+	line-height : 30px;
+	letter-spacing: 0.8;
+	color: #FFFFFF;
+	margin: auto;
+	text-align: center;
+}
+
+.intro {
+	padding-top: 2%;
+	font-family: 'Orbitron';
+	margin: 0 auto;
+}
+
+.split {
+	height: auto;
+    width: auto;
+    position: absolute;
+    left: 50%;
+
+}
+
+.split2 {
+    margin-top: inherit;
+    height: auto;
+    width: 47%;
+    position: absolute;
+    padding-top: 1%;
+}
+
+.block {
+margin-top: auto;
+	position: absolute;
+    right: 0%;
+	background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(20px);
+}
+
+img {
+    width: 150px;
+}
+
+</style>
+	<body class="splitmain">
+		<div class="headerfont", id="typedtext">
+			<script src="animation.js"> </script>
+		</div>
+		<div class="split">
+		<div class="intro">
+			<p>
+				<span style="color:FF0000">C0mputer 10ver, business-0riented,<br></span>
+				<span style="color:FF8000">Research-10ving, m0de1 r0cketeer,<br></span>
+				<span style="color:FFFF00">Miss t0 fly, 10ves t0 drive,<br></span>
+				<span style="color:80FF00">Electr0nicist, r0b0ticist,<br></span>
+				<span style="color:00FF00">0ften asks si11y questi0ns<br></span>
+				<span style="color:00FF80">S1ight1y antis0cia1 & shy<br></span>
+				<span style="color:00FFFF">1ess eater, se1f-eater,<br></span>
+				<span style="color:0080FF">S0metimes crazy<br></span>
+				<span style="color:FF00FF">Ph0t0grapher, biker...</span>
+			</p>
+		</div>
+		</div>
+		<div class="split2">
+		<div class="block"></block>
+			<img src="photo2.jpg"></img> 
+		</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
