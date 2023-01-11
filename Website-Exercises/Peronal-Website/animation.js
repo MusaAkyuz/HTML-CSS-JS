@@ -20,9 +20,7 @@ var sContents = ''; // initialise contents variable
 var iRow; // initialise current row
 
  
- 
- 
-function typewriter()
+function typewriter(musa)
 {
  sContents =  ' ';
  iRow = Math.max(0, iIndex-iScrollAt);
