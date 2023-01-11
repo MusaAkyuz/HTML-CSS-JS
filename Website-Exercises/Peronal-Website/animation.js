@@ -18,6 +18,7 @@ var iScrollAt = 20; // start scrolling up at this many lines
 var iTextPos = 0; // initialise text position
 var sContents = ''; // initialise contents variable
 var iRow; // initialise current row
+
  
  
  
@@ -30,14 +31,14 @@ function typewriter()
  //var destination3 = document.getElementById("typedtext3");
  
  while ( iRow < iIndex ) {
-  sContents += aText[iRow++] + '<br>';
+  sContents += musa[iRow++] + '<br>';
  }
- destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+ destination.innerHTML = sContents + musa[iIndex].substring(0, iTextPos) + "_";
  if ( iTextPos++ == iArrLength ) {
   iTextPos = 0;
   iIndex++;
-  if ( iIndex != aText.length ) {
-   iArrLength = aText[iIndex].length;
+  if ( iIndex != musa.length ) {
+   iArrLength = musa[iIndex].length;
    setTimeout("typewriter()", 700);
   }
  } else {
@@ -46,6 +47,6 @@ function typewriter()
 }
 
 
-typewriter();
+typewriter(aText);
 
 
