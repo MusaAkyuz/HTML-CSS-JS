@@ -1,0 +1,46 @@
+.container {  display: grid;
+    grid-template-columns: 0.9fr 1.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.1fr;
+    grid-template-rows: 0.7fr 0.7fr 0.8fr 1.8fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "isim isim Foto Foto job job job job job"
+      ". . Foto Foto . . . . ."
+      ". . Foto Foto . . . . ."
+      "explanation explanation explanation explanation explanation explanation explanation explanation explanation"
+      ". . . . . . . . ."
+      ". . . . . . . . .";
+  }
+  
+  .Foto { grid-area: Foto; border: red solid 1px; 
+    overflow-y: auto;
+    /*height: 100%;*/}
+  
+  .job { grid-area: job; border: red solid 1px;
+    overflow-y: auto; 
+    /*height: 100%;*/}
+  
+  .isim { grid-area: isim; border: red solid 1px; 
+    overflow-y: auto;
+    /*height: 100%;*/}
+  
+  .explanation { grid-area: explanation; border: red solid 1px; 
+    overflow-y: auto;
+    /*height: 100%;*/}
+  
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+div.scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
